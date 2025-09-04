@@ -19,12 +19,10 @@ const config = require(`./config.json`)
 client.config = config
 
 client.on('messageCreate', message => {
-    if (message.author.bot) return; // تجاهل الرسائل من البوتات
+    if (message.author.bot) return; 
 
-    // التأكد من أن الرسالة تبدأ بالبريفيكس المطلوب، مثلاً '!'
     if (message.content.startsWith('STREAMINGSTREAMING')) {
-        // إرسال رد تلقائي
-        message.reply(STREAMING);
+      message.reply(STREAMING);
     }
 });
 
@@ -51,29 +49,29 @@ client.user.setActivity(rpc.toJSON());
 });
 
 client.on('messageCreate', message => {
-    if (message.author.bot) return; // تجاهل الرسائل من البوتات
+    if (message.author.bot) return; 
 
-    // التأكد من أن الرسالة تبدأ بالبريفيكس المطلوب، مثلاً '!'
+
     if (message.content.startsWith('<@1152760409405788162>')) {
-        // إرسال رد تلقائي
+
         message.reply('مرحبا! اتمنى منك الصبر وعدم تكرار المنشن وانتضار زعيم لرد عليك وشكرا .');
     }
 });
 
 client.on('messageCreate', message => {
-    if (message.author.bot) return; // تجاهل الرسائل من البوتات
+    if (message.author.bot) return; 
 
-    // التأكد من أن الرسالة تبدأ بالبريفيكس المطلوب، مثلاً '!'
+
     if (message.content.startsWith('ZA3EM')) {
-        // إرسال رد تلقائي
+
         message.reply('اذا حاب مشاكل ارواح تابي في بريفي');
     }
 });
 
 client.on('messageCreate', message => {
-    if (message.author.bot) return; // تجاهل الرسائل من البوتات
+    if (message.author.bot) return; 
 
-    // التأكد من أن الرسالة تبدأ بالبريفيكس المطلوب، مثلاً '!'
+
     if (message.content.startsWith('za3em')) {
         // إرسال رد تلقائي
         message.reply('اذا حاب مشاكل ارواح تابي في بريفي');
@@ -81,28 +79,27 @@ client.on('messageCreate', message => {
 });
 
 client.on('messageCreate', message => {
-    if (message.author.bot) return; // تجاهل الرسائل من البوتات
+    if (message.author.bot) return;
 
-    // التأكد من أن الرسالة تبدأ بالبريفيكس المطلوب، مثلاً '!'
     if (message.content.startsWith('زعيم')) {
-        // إرسال رد تلقائي
+
         message.reply('اذا حاب مشاكل ارواح تابي في بريفي');
     }
 });
 client.on('messageCreate', message => {
-    if (message.author.bot) return; // تجاهل الرسائل من البوتات
+    if (message.author.bot) return; 
 
-    // التأكد من أن الرسالة تبدأ بالبريفيكس المطلوب، مثلاً '!'
+
     if (message.content.startsWith('9WD')) {
-        // إرسال رد تلقائي
+
         message.reply('اذا حاب مشاكل ارواح تابي في بريفي');
     }
 });
 
 client.on('messageCreate', message => {
-    if (message.author.bot) return; // تجاهل الرسائل من البوتات
+    if (message.author.bot) return; 
 
-    // التأكد من أن الرسالة تبدأ بالبريفيكس المطلوب، مثلاً '!'
+
     if (message.content.startsWith('9wd')) {
         // إرسال رد تلقائي
         message.reply('اذا حاب مشاكل ارواح تابي في بريفي');
@@ -110,14 +107,13 @@ client.on('messageCreate', message => {
 });
 
 client.on('messageCreate', message => {
-    if (message.author.bot) return; // تجاهل الرسائل من البوتات
+    if (message.author.bot) return; 
 
-    // التأكد من أن الرسالة تبدأ بالبريفيكس المطلوب، مثلاً '!'
+
     if (message.content.startsWith('قود')) {
-        // إرسال رد تلقائي
+
         message.reply('اذا حاب مشاكل ارواح تابي في بريفي');
     }
 });
-//Account Token
 
 client.login(token);
